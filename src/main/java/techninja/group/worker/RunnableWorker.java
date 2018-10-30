@@ -4,7 +4,6 @@ import java.util.concurrent.Callable;
 
 public class RunnableWorker implements Callable<String>{
 	
-	//public static String ThreadName="";
 	public RunnableWorker() {
 
 	}
@@ -17,7 +16,6 @@ public class RunnableWorker implements Callable<String>{
  		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		//ThreadName =Thread.currentThread().getName();
 		return Thread.currentThread().getName();
 	}
 	
