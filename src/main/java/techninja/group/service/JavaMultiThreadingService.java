@@ -31,8 +31,7 @@ public class JavaMultiThreadingService {
 			this.JavaThread=Jmt;
 
 			for(int taskId=0;taskId<Jmt.getNoofjobs();taskId++) {
-					
-			       
+					       
 					try {
 						Future<String> ThreadName =service.submit(new RunnableWorker());
 						msg = ThreadName.get();
